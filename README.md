@@ -1,3 +1,3 @@
 # ProjetosWeb
-Projetos que foram feito com o curso de Desenvolvimento Web Completo 2019
+Projetos que foram feitos com o curso de Desenvolvimento Web Completo 2019
 Curso em andamento...
