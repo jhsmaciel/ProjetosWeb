@@ -1,0 +1,17 @@
+body{
+    color: red; 
+    border: 1px solid black;
+}
+p {
+    color: blue;
+}
+h2{
+    color: black;
+}
+h2.verde{
+    color: green;
+}
+h2#amarelo{
+    color: yellow;
+}
+

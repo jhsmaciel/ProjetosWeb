@@ -1,0 +1,85 @@
+/* 
+    Navegação vertical
+ul {
+    padding: 0px;
+    margin:0px;
+}
+
+li {
+    padding: 5px 20px;
+    background: url('../imagens/seta.png') no-repeat left center;
+    border: 1px solid black;
+    width: 180px;
+}
+
+
+ul {
+    padding: 0px;
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    background: #f7b600 url('../imagens/menu.png') no-repeat left center;
+    text-decoration: none;
+    color: #000;
+    line-height: 40px;
+    text-indent: 40px;
+}
+ul a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #FFF;
+}
+#home .home a,
+#servicos .servicos a,
+#sobre .sobre a,
+#contato .contato a,
+#noticies .noticies a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #FFF;
+}
+*/
+/*Navegação Horizontal*/
+ul#navegacao {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    width: 556px;
+    background: #159cb0 url('../imagens/fundo-horizontal.png') repeat-x;
+    float:left;
+}
+ul#navegacao li {
+    float:left;
+}
+ul#navegacao a {
+    text-decoration: none;
+    display: block;
+    padding: 0em 2em;
+    line-height: 2em;
+    color: white; 
+    background:url('..//imagens/divisor.png') repeat-y;
+}
+
+ul#navegacao a:hover {
+    background-color: #44cade;
+    color: #085662;
+}
+
+ul#navegacao .primeiro a {
+    background-image: none;
+}
+
+#home .home a,
+#servicos .servicos a,
+#sobre .sobre a,
+#contato .contato a,
+#noticies .noticies a {
+    background-color: #44cade;
+    color: #085662;
+}
+
