@@ -1,0 +1,96 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+#container {
+    /* Layout fixo
+    width: 720px;
+    */
+    /* Layout liquido
+    width: 80%;
+    */
+    width: 960px;
+    margin: 0 auto;
+    background: white url('../imagenslayouts/coluna.png') repeat-y left top;
+}
+#marca {
+    height: 200px;
+    background: #225992 url('../imagenslayouts/cabecalho2.jpg') no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+
+#conteudo {
+    border: 1px solid black;
+    /* Layout fixo
+    width: 520px;
+    */
+    /* Layout liquido*/
+    width: 72%;
+    float: right;
+}
+
+#conteudo-principal {
+    /* Layout fixo
+    width: 320px;
+    */
+    /* Layout liquido*/
+    width: 61%;
+    float: left;
+}
+
+#conteudo-secundario {
+    /* Layout fixo
+    width: 180px;
+    */
+    /* Layout liquido*/
+    width: 35%;
+    float: right;
+    background: #d1d1d1;
+    padding-left: 5px;
+}
+
+#conteudo-secundario h2,
+#conteudo-secundario p {
+    padding: 0 20px;
+}
+
+#navegacao {
+    border: 1px solid black;
+    /* Layout fixo
+    width: 180px;
+    */
+    /* Layout liquido
+    width: 25%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background: #d1d1d1;*/
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 10px;
+    text-align: center;
+}
+
+#navegacao ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.clear {
+    clear: both;
+}
+
+img.img-noticia {
+    width: 94%;
+    padding: 2%;
+}
