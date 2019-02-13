@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+header {
+    text-align: center;
+}
+nav {
+    border: 1px solid red;
+}
+footer {
+    background: gray;
+    text-align: center;
+    padding: 20px;
+}
+article {
+    background: orange;
+}
+section {
+    color: white;
+    border: 1px dotted white;
+    margin:10px;
+}
+time {
+    color: #999;
+}
+aside {
+    background: blue;
+}
