@@ -14,49 +14,88 @@
     <style type="text/css">
         
         /*Small devices (landscape phones)*/
-        @media () {}
-
+        @media (min-width: 576px) {
+          body{
+            background: red;
+          }
+        }
         /*Medium devices (tablets, 768px e superior)*/
-        @media () {}
+        @media (min-width: 768px) {
+          body {
+            background: red;
+          }
+        }
 
         /*Large devices (desktops, 992px e superior)*/
-        @media () {}
+        @media (min-width:992px) {
+          body {
+            background: red;
+          }
+        }
 
         /*Extra large devices (large desktops, 1200px e superior)*/
-        @media () {}
+        @media (min-width: 1200px) {
+          body{
+            background: red;
+          }
+        }
 
 
 
         /**************************/
         /* Extra small devices (portraint phones) */
-        @media () {}
+        @media (max-width:575px) {
+          body{
+            background: #870000;
+          }
+        }
 
         /* Small devices (Landscape Phones) */
-        @media () {}
+        @media (max-width: 768px) {}
 
         /* Medium devices (Tablets) */
-        @media () {}
+        @media (max-width: 992px) {}
 
         /* Large devices (Desktops) */
-        @media () {}
+        @media (max-width: 1200px) {}
 
 
 
         /******************************************/
         /*Extra small devices (portrait phones, menor que 576px)*/
-        @media () {}
+        @media (max-width:575px) {
+          body{
+            background: #870000;
+          }
+        }
 
         /*Small devices (landscape phones, 576px e maiores)*/
-        @media () and () {}
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+          body{
+            background: red;
+          }
+        }
 
         /*Medium devices (tablets, 768px e maiores)*/
-        @media () and () {}
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          body {
+            background: blue;
+          }
+        }
 
         /*Large devices (desktops, 992px e maiores)*/
-        @media () and () {}
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          body {
+            background: yellow;
+          }
+        }
 
         /*Extra large devices (large desktops, 1200px  e maiores)*/
-        @media () {}
+        @media (min-width: 1200px) {
+          body{
+            background: gray;
+          }
+        }
 
     </style>
 
