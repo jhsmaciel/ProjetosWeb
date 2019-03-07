@@ -4,19 +4,35 @@
     <head>
         <meta charset="utf-8" />
         <title>If and Else</title>
-        <script>
-
-            if (2 === "2"){
-                document.write("<h1>Entrou no bloco if</h1>")
-            } else {
-                document.write("<h1>Entrou no bloco else</h1>")
-            }
-           
-        </script>
+        
     </head>
     <body>
 
 
     </body>
+    <script>
+        var media = 7;
+        var nota = prompt("Digite a nota para verificar o estado do aluno: ");
+        var faltas = prompt("Digite a quantidade de faltas: ");
 
+        var faltas_maximas = 15;
+        // Operadores iguais do java, && and, || or 
+        if (nota >= media && faltas <= faltas_maximas ) {
+            document.write("<h1 style='color:green;'>Aprovado</h1>");
+        } else {
+            document.write("<h1 style='color:red;'>Reprovado</h1>");    
+        }
+
+        var resultado = (nota >= media && faltas <= faltas_maximas) ? "style='color:green'>Aprovado" : "style='color:red'>Reprovado"
+            document.write("<h1 "+ resultado +"</h1>");  
+
+
+//        var valor = prompt("Digite if ou else: ");
+//        if (valor === "if"){
+//            document.write("<h1>Entrou no bloco if</h1>");
+//        } else if (valor === "else") {
+//            document.write("<h1>Entrou no bloco else</h1>");
+//        }
+        
+    </script>
 </html>
