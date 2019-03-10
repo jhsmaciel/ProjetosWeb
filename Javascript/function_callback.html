@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Function CallBack</title>
+        <script>
+
+            function exibirFormulario(id,emitirSucesso,emitirErro) {
+                if ( id < 10 ) {
+                    emitirSucesso("Lorem ipsum", "descricao topzera para o formulário.")
+                } else {
+                    emitirErro("Erro 1")
+                }
+            }
+
+            var emitirSucesso = function(titulo, descricao) {
+                document.write("<h1>"+ titulo + "</h1><br>")
+                document.write("<p>"+descricao+"</p>")
+            }
+
+            var emitirErro = function(erro) {
+                document.write("<h1 style='color:red'>"+erro+"</h1>")
+            }
+            
+            exibirFormulario(prompt("Digite o valor do id: "),emitirSucesso,emitirErro)
+
+        </script>
+    </head>
+    <body>
+
+
+    </body>
+
+</html>

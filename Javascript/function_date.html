@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Numbers</title>
+        <script>
+            
+            var data = new Date();
+
+            //document.write(data.getDate()+"/"+data.getMonth()+"/"+data.getFullYear())
+            
+            document.write(data.toString()+"<br>")
+            data.setDate(data.getDate() + 1)
+            document.write(data.toString()+"<br>")
+
+            document.write(data.toString()+"<br>")
+            data.setMonth(data.getMonth() + 1)
+            document.write(data.toString()+"<br>")
+
+            document.write(data.toString()+"<br>")
+            data.setFullYear(data.getFullYear() + 1)
+            document.write(data.toString()+"<br>")
+
+
+            var data1 =  new Date(2019,2,8);
+            var data2 =  new Date(2020,9,25);
+
+            document.write(data1.toString()+"<br>")
+            document.write(data2.toString()+"<br>")
+            milisegundoDia = (24*60*60*1000)
+            milisegundoRange = Math.abs(data1.getTime()-data2.getTime())
+            document.write(data1.getTime()+"<br>")
+            document.write(data2.getTime()+"<br>")
+
+            document.write(milisegundoRange/milisegundoDia)
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
