@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript</title>
+        <style type="text/css">
+            .estilo1 {
+                background: black;
+                color: white;
+            }
+
+            .estilo2 {
+                width: 400px;
+                height: 50px;
+                background-color: #FF0000;
+                text-align: center;
+                font-size: 25px;
+                color: white;
+                padding: 25px;
+            }
+        </style>
+        <script>
+            function modificaClasse(){
+                if (document.getElementById('mensagem').className == 'estilo1'){
+                    document.getElementById('mensagem').className = 'estilo2'
+                    document.getElementById('button').value = 'Tirar estilizacao 2'
+                } else {
+                    document.getElementById('mensagem').className = 'estilo1'
+                    document.getElementById('button').value = 'Aplicar estilizacao 2'  
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mensagem" class="estilo1">Modificando classes do elemento</div>
+        <hr>
+        <input onclick="modificaClasse()" id="button" type="submit" value="Aplicar estilizacao 2">
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <style type="text/css">
+            input {
+                width: 150px;
+                height: 25px;
+            }
+        </style>
+        <script>
+            function exibirFoco() {
+                document.getElementById('inputText').style.background = 'yellow';
+            } 
+
+            function validarCampo() {
+                var campo = document.getElementById('inputText').value 
+                if (campo.length < 3 ){
+                    document.getElementById('inputText').style.background = 'red'
+                } else {
+                    document.getElementById('inputText').style.background = 'green'
+                }
+            }    
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="inputText" onfocus="exibirFoco()" onblur="validarCampo()">
+    </body>
+</html>

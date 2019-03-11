@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOM</title>
+        <script>
+            console.log(document.getElementById('nome'));
+        </script>
+    </head>
+    <body>
+        <input 
+            type="text"
+            placeholder="Digite o seu nome"
+            id="nome"
+            class="campoText"
+            name="nome"
+        >
+        <script>
+            console.log(document.getElementById('nome'));
+            console.log(document.getElementsByTagName('input'));
+            console.log(document.getElementsByClassName('campoText'));
+            console.log(document.getElementsByName('nome'));
+        </script>
+    </body>
+</html>
