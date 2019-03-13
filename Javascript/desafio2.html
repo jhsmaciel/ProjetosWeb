@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <script>
+           var arrayCoisas = Array()
+           function adicionarElemento() {
+              var texto = document.getElementById('texto').value
+              if (texto != ''){
+                var index = parseInt(arrayCoisas.indexOf(texto))
+                if(index != -1){
+                    alert('Objeto já adicionado!')
+                } else {
+                    arrayCoisas.push(texto)
+                }
+              } else {
+                  alert('Informe um valor válido!')
+              }
+              document.getElementById('texto').value =''
+              console.log(arrayCoisas)
+           }
+           function ordernarArray() {
+               arrayCoisas.sort()
+               console.log(arrayCoisas)
+           }
+           function excluirAll() {
+               while(arrayCoisas.length > 0 ){
+                   arrayCoisas.pop();
+               }
+               console.log(arrayCoisas)
+           }
+        </script>
+    </head>
+    <body>
+    <input type="text" id="texto">
+    <button onclick="adicionarElemento()">Adicionar</button>
+    <button onclick="ordernarArray()">Ordenar</button>
+    <button onclick="excluirAll()">Excluir all</button>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <script>
+           var listaFrutas = Array('Banana','Maçã','Morango','Uva');
+            do {
+                var frutaNome = prompt("Digite uma fruta");
+
+                if(listaFrutas.indexOf(frutaNome) === -1) {
+                    listaFrutas.unshift(frutaNome)
+                    alert("Fruta não estáva no array, mas agora foi adicionada!")
+                } else {
+                    alert(listaFrutas.indexOf(frutaNome)+listaFrutas[listaFrutas.indexOf(frutaNome)])
+                }
+                console.log(listaFrutas)
+            } while (frutaNome != 'sair')
+            console.log(listaFrutas)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

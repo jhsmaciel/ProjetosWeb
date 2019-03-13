@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <script>
+           var listaFrutas = Array('Banana','Maçã');
+           // Final do array
+           listaFrutas.push("Uva")
+           // Começo do array
+           listaFrutas.unshift('Morango')
+           
+           document.write(listaFrutas+'<br>')
+           // Excluir ultimo elemento do array
+           listaFrutas.pop()
+           // Excluir primeiro elemento do array
+           listaFrutas.shift()
+           document.write(listaFrutas)
+           var listaCoisas = Array();
+           listaCoisas['frutas'] = Array()
+           listaCoisas['pessoas'] = []
+
+           listaCoisas['frutas'].push('banana')
+           listaCoisas['frutas'].push('uva')
+           document.write('<br>'+listaCoisas)
+           console.log(listaCoisas)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
