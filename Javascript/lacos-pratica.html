@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function makeString() {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+            for (var i = 0; i < 6; i++)
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+            return text;
+            }
+
+
+            var frutas = Array('Banana','Maçã');
+            frutas[2] = 'Morango'
+            frutas[3] = 'Uva'
+            for(var i = 4;i<=10000;i++){
+                frutas[i] = makeString()
+            }
+            var y = 0 
+            while (y < frutas.length) {
+                document.write(frutas[y]+'<br>'+y+'<br  >')
+                y++
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

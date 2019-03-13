@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Function JavaScript</title>
+    <script>
+        var videos = Array()
+        videos[1] = Array()
+        videos[1]['nome'] = 'FMA'
+        videos[1]['categoria'] = 'Anime'
+
+        function getVideo(video) {
+            //logica
+            //http
+            try {
+                console.log(video[0]['nome'])
+            } catch (erro) {
+                tratarErro(erro)
+            } finally {
+                console.log('sempre passa por aq')
+            }
+        }
+        function tratarErro(e) {
+            console.log(e)
+            throw new Error('Houve um erro, estamos trabalhando nisto!')
+        }
+        getVideo(videos)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

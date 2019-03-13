@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var listaConvidados = Array()
+
+            listaConvidados[10] = 'João'
+            listaConvidados['a'] = 'Henrique'
+            listaConvidados[true] = 'Larissa'
+            listaConvidados[false] = 'Pedro'
+            listaConvidados['zebra'] = 'Ana'
+
+            for (var x in listaConvidados) {
+                document.write("Índice: "+x+", Valor: "+listaConvidados[x]+'<br>')
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

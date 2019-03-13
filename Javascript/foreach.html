@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var listaFuncionarios = Array()
+
+            listaFuncionarios[0] = 'João'
+            listaFuncionarios[1] = 'Henrique'
+            listaFuncionarios[2] = 'Larissa'
+            listaFuncionarios[3] = 'Pedro'
+            listaFuncionarios[4] = 'Ana'
+
+            listaFuncionarios.forEach(function(valor,indice,array) {
+                if (valor === 'Henrique') {
+                    array[indice] = 'NewValue'
+                }
+                console.log(valor,indice)
+                console.log(array)
+            })
+            listaFuncionarios[true] = 'João'
+            listaFuncionarios['a'] = 'Henrique'
+            listaFuncionarios[false] = 'Larissa'
+            listaFuncionarios[5] = 'Pedro'
+            listaFuncionarios[6] = 'Ana'
+            var func = function(valor,indice,array){
+                console.log(valor, indice)
+                console.log(array)
+            }
+            listaFuncionarios.forEach(func)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
