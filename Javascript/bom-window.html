@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Top</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var janela
+            function abrirJanela() {
+                janela = window.open('','NewWindow','width=200, height=100')
+            }
+            function fecharJanela() {
+                janela.close();
+            }
+            function imprimirJanela(){
+                window.print();
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="abrirJanela()">Abrir Janela</button>
+        <button onclick="fecharJanela()">Fechar Janela</button>
+        <button onclick="imprimirJanela()">Imprimir Janela</button>
+    </body>
+</html>

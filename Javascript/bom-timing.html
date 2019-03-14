@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var valor = 5
+            var funcao = function(){
+                
+                document.write('<br>'+valor--)
+                if ( valor === 0 ){
+                    window.location.reload()
+                }
+            }
+            
+            function imprimirTexto(){
+                setInterval(funcao,1000)// set(funcao, 2000) --> Continua
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="imprimirTexto()">imprimir texto</button>
+    </body>
+</html>
