@@ -9,7 +9,6 @@
     <script src="js/jogo.js"></script>
 </head>
 <body onresize="ajustaAreaJogo()">
-    
     <div class="painel">
         <div class="vidas">
             <img id="v1" src="image/coracao_cheio.png" width="50">
@@ -18,10 +17,9 @@
         </div>
         <div class="cronometro">Tempo restante:<span id="cronometro"></span></div>
     </div>
-    
     <script>
         document.getElementById('cronometro').innerHTML = tempo
-        var criaMosca = setInterval(function (){posicaoRandomica()},2000)
+        var criaMosca = setInterval(function (){posicaoRandomica()},1000)
     </script>
 </body>
 </html>

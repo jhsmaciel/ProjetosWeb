@@ -18,6 +18,10 @@
 .ladoB {
     transform: scaleX( -1 )
 }
+body {
+    background: url('../image/bg.jpg') no-repeat;
+    overflow: hidden;
+}
 .painel {
     position: absolute;
     width: 190px;
