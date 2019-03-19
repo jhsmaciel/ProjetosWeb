@@ -1,3 +1,3 @@
 # ProjetosWeb
-Projetos que foram feitos com o curso de Desenvolvimento Web Completo 2019 - 20 cursos + 20 projetos, pela plataforma udemy
+Projetos que foram feitos com o curso de Desenvolvimento Web Completo 2019, pela plataforma udemy
 Curso em andamento...
