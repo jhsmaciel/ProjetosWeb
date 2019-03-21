@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Let</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            let serie = "Friends"
+
+            {
+                let serie = "The Walking Dead"
+                console.log("Dentro do bloco: "+serie)
+            }
+            console.log("Fora do bloco: "+serie)
+
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
