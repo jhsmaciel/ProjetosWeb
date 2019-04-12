@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Objeto</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            
+            
+
+            class Carro{
+                constructor (cor,modelo,velocidadeAtual,velocidadeMaxima){
+                    this.cor = cor,
+                    this.modelo = modelo,
+                    this.velocidadeAtual = velocidadeAtual,
+                    this.velocidadeMaxima = velocidadeMaxima
+                }
+                
+                setVelocidadeAtual(velocidadeAtual){
+                    this.velocidadeAtual = velocidadeAtual
+                }
+
+                getVelocidadeAtual(){
+                    return this.velocidadeAtual
+                }
+                acelerar(){
+                    this.setVelocidadeAtual(this.getVelocidadeAtual()+10)
+                }
+            }
+
+            let carro = new Carro("Azul","Civic",0,200)
+
+            console.log("Velocidade atual eh "+ carro.velocidadeAtual)
+            console.log(carro.getVelocidadeAtual())
+            carro.setVelocidadeAtual(carro.getVelocidadeAtual()+10)
+            console.log("Velocidade atual eh "+ carro.velocidadeAtual)
+            function acelerarButton(){
+                if(carro.velocidadeAtual < carro.velocidadeMaxima ){
+                    carro.acelerar()
+                    console.log("Velocidade atual eh "+ carro.velocidadeAtual)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="acelerarButton()">Acelerar</button>
+    </body>
+</html>

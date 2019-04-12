@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Objetos literarios</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+
+            class Aluno {
+                constructor(nome, idade){
+                    this.nome = nome
+                    this.idade = idade
+                }
+                apresentarAluno(){
+                    return `1 O nome do aluno eh ${this.nome} e a idade dele eh ${this.idade}`
+                }
+            }    
+            
+            let alun = new Aluno("Joao Henrique",19)
+            console.log(alun.apresentarAluno())
+
+            let  alunLiterario = {
+                nome: "Joao Henrique",
+                idade: 19,
+                apresentarAluno: function (){
+                    return `2 O nome do aluno eh ${this.nome} e a idade dele eh ${this.idade}`
+                }
+            }
+
+            console.log(alunLiterario.apresentarAluno())
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

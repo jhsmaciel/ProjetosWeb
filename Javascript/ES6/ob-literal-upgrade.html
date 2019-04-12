@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Objetos literarios</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            
+           /*
+            function setObject(nome,idade,sexo,profissao) {
+                return {
+                    nome: nome,
+                    idade: idade,
+                    sexo: sexo,
+                    profissao: profissao,
+                    exibirProfissao: function(){
+                        return `${this.nome}, ${this.idade} anos, sexo ${this.sexo}, e atua como ${this.profissao}`
+                    }
+                }
+            }
+
+            function getObject(){
+                return setObject(
+                    document.getElementById('nome').value,
+                    document.getElementById('idade').value,
+                    document.getElementById('sexo').value,
+                    document.getElementById('profissao').value
+                )
+            }
+           */
+            // Em ES6
+
+            
+            
+            function seeObject(){
+                class Usuario{
+                    constructor(nome,idade,sexo,profissao){
+                        this.nome = nome,
+                        this.idade = idade,
+                        this.sexo = sexo,
+                        this.profissao = profissao
+                    }
+                    exibirProfissao(){
+                        return `${this.nome}, ${this.idade} anos, sexo ${this.sexo}, e atua como ${this.profissao}`
+                    }
+                }
+
+                let usuario = new Usuario(
+                    document.getElementById('nome').value,
+                    document.getElementById('idade').value,
+                    document.getElementById('sexo').value,
+                    document.getElementById('profissao').value
+                )
+
+                let desc = document.getElementById('descricao')
+                desc.innerHTML = usuario.exibirProfissao()
+            }
+        
+        </script>
+        <style type="text/css">
+            input {
+                margin:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Nome
+            <input id="nome" type="text">    
+        </div>
+        <div>
+            Idade
+            <input id="idade" type="number">    
+        </div>
+        <div>
+            Sexo
+            <input id="sexo" type="text">    
+        </div>
+        <div>
+            Profissao
+            <input id="profissao" type="text">    
+        </div>
+        
+        <button onclick="seeObject()">Exibir no console</button>
+        <div>
+            Descricao
+            <div id="descricao"></div>
+        </div>
+    </body>
+</html>

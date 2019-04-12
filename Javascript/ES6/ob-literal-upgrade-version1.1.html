@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Objetos literarios</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+        
+
+            let usuario = null
+            
+            function seeObject(){
+
+                class Usuario{
+                    constructor(nome,idade,sexo,profissao){
+                        this.nome = nome,
+                        this.idade = idade,
+                        this.sexo = sexo,
+                        this.profissao = profissao
+                    }
+                    exibirProfissao(){
+                        return `${this.nome}, ${this.idade} anos, sexo ${this.sexo}, e atua como ${this.profissao}`
+                    }
+                }
+
+                usuario = new Usuario(
+                    document.getElementById('nome').value,
+                    document.getElementById('idade').value,
+                    document.getElementById('sexo').value,
+                    document.getElementById('profissao').value
+                )
+
+                let desc = document.getElementById('descricao')
+                desc.innerHTML = usuario.exibirProfissao()
+            }
+        
+        </script>
+        <style type="text/css">
+            * {
+                margin:8px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Nome
+            <input id="nome" type="text">    
+        </div>
+        <div>
+            Idade
+            <input id="idade" type="number">    
+        </div>
+        <div>
+            Sexo
+            <input id="sexo" type="text">    
+        </div>
+        <div>
+            Profissao
+            <input id="profissao" type="text">    
+        </div>
+        
+        <button onclick="seeObject()">Exibir no console</button>
+        <div>
+            Descricao
+            <div id="descricao">
+
+            </div>
+        </div>
+    </body>
+</html>
